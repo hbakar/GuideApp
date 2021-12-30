@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:rehberapp/screens/locations/locations.dart';
 import 'package:rehberapp/screens/onboarding/onboarding_page.dart';
 import 'package:rehberapp/utils/constant.dart';
+import 'login/view/login_view.dart';
 import 'utils/router.dart' as router;
 
 void main() {
@@ -32,8 +33,8 @@ class MyApp extends StatelessWidget {
             focusedBorder: border,
             focusedErrorBorder: border,
           )),
-      home:
-          OnboardingPage(), // LocationsPage() //OnboardingPage(), //SplashScreen(),
+      home: LoginView(),
+      // OnboardingPage(), // LocationsPage() //OnboardingPage(), //SplashScreen(),
     );
   }
 }

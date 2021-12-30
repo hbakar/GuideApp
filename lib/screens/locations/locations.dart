@@ -53,10 +53,13 @@ class _LocationsPageState extends State<LocationsPage> {
 
   ListTile buildListile() {
     return ListTile(
-      leading: CachedNetworkImage(
-        imageUrl: 'https://picsum.photos/96/96',
-        width: getProportionateScreenWidth(96.0),
-        height: getProportionateScreenHeight(96.0),
+      leading: ClipRRect(
+        borderRadius: BorderRadius.circular(20.0),
+        child: CachedNetworkImage(
+          imageUrl: 'https://picsum.photos/96/96',
+          width: getProportionateScreenWidth(96.0),
+          height: getProportionateScreenHeight(96.0),
+        ),
       ),
       title: Text(
         "Ertuğrul Gazi Türbesi ",

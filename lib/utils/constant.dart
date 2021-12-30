@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:rehberapp/utils/size_config.dart';
 
+const String baseUrl = 'https://reqres.in/api/';
+
 /* COLORS starts */
 const kPrimaryColor = Color(0xFFE76B12);
 const kSecondaryColor = Color(0xFFFFCCA7);

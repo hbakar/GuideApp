@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:rehberapp/models/onboardingContent.dart';
+import 'package:rehberapp/screens/auth/login.dart';
 import 'package:rehberapp/screens/home/home.dart';
 import 'package:rehberapp/screens/locations/locations.dart';
 import 'package:rehberapp/utils/constant.dart';
@@ -39,7 +40,10 @@ class _OnboardingPageState extends State<OnboardingPage>
         );
 */
         Navigator.push(
-            context, MaterialPageRoute(builder: (_) => LocationsPage()));
+            context,
+            MaterialPageRoute(
+                builder: (_) =>
+                    LoginPage())); // HomePage())); // LocationsPage()));
       }
     });
 
